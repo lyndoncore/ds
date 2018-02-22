@@ -30,7 +30,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background: #3f3f57;
+	background: #33354c;
 }
 
 ul {
@@ -63,8 +63,18 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0 115px;
 }
 
+.header--site {
+	background: #33354c;
+	box-sizing: border-box;
+	padding: 0 115px;
+}
+
 .header-logo {
 	width: 100px;
+}
+
+.header-logo:hover {
+	opacity: 0.8;
 }
 
 .header__links {
@@ -130,8 +140,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__logo {
 	display: none;
-	width: 165px;
-	margin-bottom: 20px;
+	width: 100px;
+	margin-bottom: 50px;
 }
 
 .hero__title {
@@ -318,6 +328,14 @@ h1, h2, h3, h4, h5, h6 {
 	width: 400px;
 }
 
+.pricing__icon--wide {
+	width: 50px;
+}
+
+.pricing__icon--tall {
+	height: 50px;
+}
+
 .pricing__subtitle {
 	color: #7b8ca8;
 	margin: 20px 20px 0 20px;
@@ -450,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo {
-	width: 125px;
+	width: 100px;
 	margin: 10px 0;
 }
 
@@ -507,6 +525,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 14px;
 	padding-top: 20px;
 	color: rgba(0,0,0,0.5);
+	text-align: center;
 }
 
 /* ============================================================================================== */
@@ -565,55 +584,52 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .thank-you {
-	background: #3d386e;
-	height: 100vh;
-	min-height: 550px;
-	width: 100%;
+	background: #fff;
+	background-position: center center;
+	background-size: 100%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
+	height: 600px;
+}
 
-	background: linear-gradient(180deg, #3e32b0, #5f25bf, #9c25bf);
-	background-size: 600% 600%;
-
-	-webkit-animation: AnimationName 10s ease infinite;
-	-moz-animation: AnimationName 10s ease infinite;
-	animation: AnimationName 10s ease infinite;
+.thank-you__icon {
+	height: 60px;
 }
 
 .thank-you__title {
-	color: #fff;
-	font-size: 42px;
-    font-weight: 200;
-	margin: 20px 0 10px;
+	color: #33354c;
 	text-align: center;
+	font-size: 40px;
+    margin: 40px 0 10px 0;
 }
 
 .thank-you__sub-title {
-	color: #fff;
+	color: #7b8ca8;
 	text-align: center;
-	font-size: 18px;
-    font-weight: 200;
-    max-width: 650px;
+	font-size: 16px;
+	font-weight: 300;
+    max-width: 700px;
     line-height: 2;
-    margin-bottom: 40px;
+    margin: 10px 0 50px 0;
 }
 
 .thank-you__home-btn {
 	align-self: center;
 	font-size: 14px;
-	font-weight: lighter;
     color: #fff;
     padding: 12px 32px;
     border-radius: 5px;
     border: none;
-    background: #00cf9c;
+    background: #6640fd;
+    margin-bottom: 30px;
 }
 
 .thank-you__home-btn:hover {
-	background: #DDD;
+    background: #5b3bda;
 }
+
 
 /* ========================================================================== Media Queries */
 
@@ -624,18 +640,18 @@ h1, h2, h3, h4, h5, h6 {
 		background-size: 1100px;
 	}
 
-	.header--landing {
+	.header--landing, .header--site {
 		padding: 0 50px;
 	}
 }
 
 @media (max-width: 900px) {
 
-	.hero__title {
+	.hero__title, .thank-you__title {
 		font-size: 30px;
 	}
 
-	.hero__sub-title {
+	.hero__sub-title, .thank-you__sub-title  {
 		font-size: 14px;
 		opacity: 0.7;
 	}
@@ -705,16 +721,6 @@ h1, h2, h3, h4, h5, h6 {
 	
 }
 
-@media (max-width: 525px) {
-	.thank-you__title {
-		font-size: 48px;
-	}
-
-	.thank-you__sub-title {
-		font-size: 20px;
-	}
-}
-
 @media (max-width: 500px) {
 	.team__member {
 		text-align: center;
@@ -750,3 +756,14 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 }
+
+
+@media (max-width: 410px) {
+
+	.pricing__icons {
+		width: 320px;
+	}
+
+}
+
+
