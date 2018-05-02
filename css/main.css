@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header--site {
-	background: #33354c;
+	background: #fd8640;
 	box-sizing: border-box;
 	padding: 0 115px;
 }
@@ -160,6 +160,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__sub-title-link {
 	color: #fd8640;
+}
+
+.hero__input-container a {
+	text-decoration: none;
 }
 
 .hero__button {
@@ -641,7 +645,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .thank-you__title {
-	color: #33354c;
+	color: #444;
 	text-align: center;
 	font-size: 40px;
     margin: 40px 0 10px 0;
@@ -735,10 +739,12 @@ h1, h2, h3, h4, h5, h6 {
 
 	.hero__button--alt {
 		display: flex;
+		width: 190px;
 	}
 
 	.hero__button {
 		padding: 12px 52px;
+		width: 190px;
 	}
 }
 
@@ -769,15 +775,15 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 500px) {
 
 	body {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.hero__title {
-		font-size: 20px;
+		font-size: 24px;
 	}
 
 	.hero__sub-title {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.team__member {
@@ -801,6 +807,18 @@ h1, h2, h3, h4, h5, h6 {
 		background-size: 900px;
 	}
 
+	.hero__logo {
+		margin-bottom: 35px;
+	}
+
+	.hero__title {
+		margin-bottom: 15px;
+	}
+
+	.hero__sub-title {
+	    margin-bottom: 35px;
+	}
+
 }
 
 @media (max-width: 450px) {
@@ -819,6 +837,10 @@ h1, h2, h3, h4, h5, h6 {
 	    width: 300px;
 	    box-sizing: border-box;
 	    text-align: center;
+	}
+
+	.how__box {
+		padding: 25px 20px;
 	}
 
 	.pricing__icons {
