@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header--site {
-	background: #fd8640;
+	background: #f76c6c;
 	box-sizing: border-box;
 	padding: 0 115px;
 }
@@ -758,14 +758,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .thank-you__title {
-	color: #444;
+	color: #24305e;
 	text-align: center;
 	font-size: 40px;
     margin: 40px 0 10px 0;
 }
 
 .thank-you__sub-title {
-	color: #777;
+	color: #374785;
 	text-align: center;
 	font-size: 16px;
 	font-weight: 300;
@@ -781,12 +781,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 32px;
     border-radius: 5px;
     border: none;
-    background: #fd8640;
+    background: #f76c6c;
     margin-bottom: 30px;
 }
 
 .thank-you__home-btn:hover {
-    background: #de7436;
+    background: #de6060;
 }
 
 
