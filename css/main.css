@@ -228,8 +228,8 @@ h1, h2, h3, h4, h5, h6 {
 .hero__image {
 	width: 850px;
 	position: relative;
-	top: 175px;
-	margin-top: -115px;
+	top: 140px;
+	margin-top: -125px;
 }
 
 .main {
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 225px 20px 150px;
+	padding: 175px 20px 100px;
 	background: #3d8bec;
 }
 
@@ -327,6 +327,52 @@ h1, h2, h3, h4, h5, h6 {
 
 .why__card-body {
 	color: #777;
+}
+
+.partners {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 90px 20px 20px;
+	background: #d6e0ec;
+}
+
+.partners__title {
+	margin-top: 40px;
+    text-align: center;
+    color: #222;
+    opacity: 0.4;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.partners__logo-container {
+	display: flex;
+	width: 900px;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 10px;
+}
+
+.partners__logo-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.partners__logo {
+	padding: 10px;
+	height: 65px;
+	opacity: 0.8;
+}
+
+.partners__type {
+	display: inline-block;
+	color: #999;
+	padding: 20px 10px;
 }
 
 .how {
@@ -673,7 +719,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-nav__slash {
-	color: #222;
+	color: #fff;
+	opacity: 0.5;
 }
 
 .footer__social {
@@ -704,7 +751,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-made-with {
 	font-size: 12px;
 	padding-top: 30px;
-	color: #222;
+	color: #fff;
 	text-align: center;
 }
 
