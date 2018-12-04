@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Downright Social</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Photography and Social Media Management for Food and Beverage Brands - based in Austin, Texas!">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sumana:700" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<!-- <link rel="canonical" href="https://www.downrightsocial.com/"> -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114679153-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114679153-1');
+</script>
+</head>
+
+<body>
+
+	<header class="header--site">
+		<a href="index.html">
+			<img class="header-logo" src="images/footer-logo-2x.png" srcset="images/footer-logo-2x.png 2x, images/footer-logo-2x.png 3x" alt="Downright Social Logo">
+		</a>
+		<div class="header__links">
+			<nav>
+				<ul class="header-nav">
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#services">SERVICES</a></li>
+				</ul>
+			</nav>
+			<a href="#contact">
+				<button class="header__button">CONTACT US</button>
+			</a>
+		</div>
+	</header>
+	
+	<div class="contact" id="contact">
+		<h2 class="contact__title">Contact Us</h2>
+		<div class="flex-container">
+			<p class="contact__subtitle"><b>Maybe you have a question?</b> No worries, our Inbox is the place for you...</p>
+		</div>
+		<div class="flex-container">
+			<form class="contact__form-container" method="POST" action="https://formspree.io/downrightsocial@gmail.com">
+				<input required class="contact__name" type="text" name="name" placeholder="Your name">
+				<input required class="contact__email" type="email" name="email" placeholder="Your email">
+				<textarea required class="contact__message" rows="10" name="message" placeholder="I would like to get prices for my business..."></textarea>
+				<input type="hidden" name="_next" value="thanks.html"/>
+				<input type="text" name="_gotcha" style="display:none" />
+				<button class="contact__send-btn" type="submit">Send</button>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		<img class="footer-logo" src="images/footer-logo.png" srcset="images/footer-logo-2x.png 2x" alt="Downright Social Logo">
+		<nav>
+			<ul class="footer-nav">
+				<li><a href="index.html">Top</a></li><span class="footer-nav__slash">/</span>
+				<li><a href="#about">About</a></li><span class="footer-nav__slash">/</span>
+				<li><a href="#services">Services</a></li><span class="footer-nav__slash">/</span>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<span class="footer-copyright">Copyright by Downright Social, LLC. All rights reserved.</span>
+		<span class="footer-made-with">Made with <img class="footer-heart-icon" src="images/heart-icon.png" alt="Heart icon"> in Austin</span>
+	</footer>
+
+</body>
+
+</html>

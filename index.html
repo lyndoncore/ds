@@ -41,28 +41,33 @@
 		</div>
 	</header>
 
-	<img class="hero__bg-img-1" src="images/valentinas-1.jpg">
-	<img class="hero__bg-img-2" src="images/ramen-tatsu-ya-2.jpg">
-	<img class="hero__bg-img-3" src="images/bakedbear-2.jpg">
-	<img class="hero__image" src="images/iphone-munch.png">
+	<img class="hero__bg-img-1" src="images/diagonals-2.png">
+	<img class="hero__bg-img-2" src="images/diagonal.png">
+	<img class="hero__bg-img-3" src="images/diagonal-2.png">
+	<img class="hero__image" src="images/iphone.png">
 
 	<div class="hero">
 		<div class="hero__left">
-			<img src="images/ds-logo-blue.png" srcset="images/ds-logo-blue.png 2x" class="hero__logo">
+			<img src="images/footer-logo-2x.png" srcset="images/footer-logo-2x.png 2x" class="hero__logo">
 			<h1 class="hero__title">Hey there, we're<br>Downright Social!</h1>
 			<p class="hero__pitch">Photography and Social Media Management for Food & Beverage Brands - based in Austin, Texas!</p>
-			<div class="hero__input-container">
-				<a href="#contact">
-					<button class="hero__button--alt">CONTACT US</button>
-				</a>
-			</div>
 			<div class="hero__options">
 				<div class="options__button-container">
 					<a href="#about">
 						<button class="hero__button">LEARN MORE</button>
 					</a>
 					<a href="#about">
-						<button class="hero__button--alt-2">CONTACT US</button>
+						<button class="hero__button--alt">GET A QUOTE</button>
+					</a>
+				</div>
+			</div>
+			<div class="hero__options--m">
+				<div class="options--m__button-container">
+					<a href="#">
+						<button class="hero__button--m">CONTACT US</button>
+					</a>
+					<a href="#about">
+						<button class="hero__button--alt--m">LEARN MORE</button>
 					</a>
 				</div>
 			</div>
@@ -71,41 +76,38 @@
 
 	<div class="about" id="about">
 
-		<h2 class="about__title">What makes us different?</h2>
-		<div class="about__tic-tac"></div>
-		<p class="about__body"><b>We <i>really</i> know social!</b> We're a little agency that started with a food instagram - <a href="https://www.instagram.com/munchaustin/" class="about__link">@MunchAustin</a>. This beginning gives us a valuable perspective and a hands-on understanding of how the food & beverage industry operates on social media. As a bonus, it also allows us to leverage our local influence to help promote our clients!</p>
-		<a href="#services">
-			<button class="about__button">OUR SERVICES</button>
-		</a>
+		<img src="images/cluster-2.png" srcset="images/cluster-2.png 2x" class="about__image">
+
+		<div class="about-right">
+			<h2 class="about__title">What makes us different?</h2>
+			<!-- <div class="about__tic-tac"></div> -->
+			<p class="about__body">We've done photography for brands including <b>JuiceLand</b>, and the <b>Fairmont Austin</b>, while also growing our own social media influence with <b><a href="https://www.instagram.com/munchaustin/" class="about__link">@MunchAustin</a></b>. We believe in strong branding, beautiful imagery, and building community with real, ethical, and wholesome practices!</p>
+			<a href="#services">
+				<button class="about__button">OUR SERVICES</button>
+			</a>
+		</div>
 	</div>
 
 	<div class="services" id="services">
 		<img src="images/notifications.png" srcset="images/notifications-2x.png 2x" alt="" class="services__icon">
 		<h2 class="services__title">Our Services:</h2>
-		<p class="services__sub-title"><b>We’ve got you covered</b> - everything from capturing amazing photos to managing the inbox. We offer everything your brand needs to champion social media (and beyond)!</p>
+		<p class="services__sub-title"><b>We’ve got you covered</b> - everything from capturing amazing photos to managing the inbox (and beyond)!</p>
 		<div class="services__grid">
 			<div class="service__container">
 				<span class="service__number">01.</span>
 				<span class="service__catagory"><i>Service:</i></span>
 				<h3 class="service__title">Photography</h3>
-				<div class="service__body">
-					<h4 class="service__sub-title">Flexible Hours:</h4>
-					<p>Flexible photography hours to be spread out between one or multiple photoshoots & locations, perfect for:</p>
-					<ul class="service__list">
-						<li>Pairing with our Social Media Management.</li>
-						<li>If your brand has multiple locations.</li>
-						<li>Operate a CPG brand.</li>
-					</ul>
-					<h4 class="service__sub-title">One-time Photoshoots:</h4>
-					<p>A one-time on-location photoshoot, perfect for:</p>
-					<ul class="service__list">
-						<li>Hosting an event.</li>
-						<li>New photos for your website.</li>
-						<li>Launching a new product or menu.</li>
-						<li>Photography for advertisements.</li>
-						<li>Testing out our photography.</li>
-					</ul>
-					<a class="service__link" href="#contact">Contact us for prices</a>
+				<div class="service__body"> 
+					<div class="individual-service">
+						<h4 class="service__sub-title">Flexible Hours:</h4>
+						<span class="service__price">(Price / 10 Hours)</span>
+						<p>Flexible photography hours to be spread out between multiple photoshoots & multiple locations. Perfect for: pairing with Social Media Management, CPGs, or if your business has multiple locations.</p>
+					</div>
+					<div class="individual-service">
+						<h4 class="service__sub-title">One-time Photoshoots:</h4>
+						<span class="service__price">(Price / Hour)</span>
+						<p>An on-location photoshoot. Perfect for: events, website photos, product/menu launches, photography for ads, or just seeing how our photography works for your business.</p>
+					</div>
 				</div>
 			</div>
 			<div class="service__container">
@@ -113,20 +115,53 @@
 				<span class="service__catagory"><i>Service:</i></span>
 				<h3 class="service__title">Social Media Management</h3>
 				<div class="service__body">
-					<h4 class="service__sub-title">Social Media Management:</h4>
-					<p>We track/report on social KPIs, optimize hashtag usage and post timing for maximum exposure, and even write post copy! These are are just <i>some</i> of the functions that fall into "Social Management" - the foundation of running your social media accounts. It's part creative, part logistics, and part analytics.</p>
-					<h4 class="service__sub-title">Add-ons:</h4>
-					<p>Some items to add on:</p>
-					<ul class="service__list">
-						<li>Influencer Marketing</li>
-						<li>Reputation Management</li>
-					</ul>
-					<a class="service__link" href="#contact">Contact us for prices</a>
+					<div class="individual-service">
+						<h4 class="service__sub-title">Social Media Management:</h4>
+						<span class="service__price">(Price / Month)</span>
+						<p>On Instagram & Twitter, we take care of account setup, posting, ongoing profile optimizations, responding to comments & DMs, influencer relations, and engaging with the food community. You'll also receive a monthly progress report.</p>
+					</div>
+					<div class="individual-service">
+						<h4 class="service__sub-title">Add-ons:</h4>
+						<div class="service__add-on">
+							<span class="service__add-on-title"><span class="service__plus">&#x2795;</span> Facebook Management</span>
+							<span class="service__add-on-price">(Price / Month)</span>
+						</div>
+						<div class="service__add-on">
+							<span class="service__add-on-title"><span class="service__plus">&#x2795;</span> Reputation Management</span>
+							<span class="service__add-on-price">(Price / Month)</span>
+						</div>
+						<div class="service__add-on">						
+							<span class="service__add-on-title"><span class="service__plus">&#x2795;</span> Influencer Marketing</span>
+							<span class="service__add-on-price">(Price / Campaign)</span>
+						</div>
+						<div class="service__add-on">						
+							<span class="service__add-on-title"><span class="service__plus">&#x2795;</span> Paid Ad Campaign</span>
+							<span class="service__add-on-price">(Price / Campaign)</span>
+						</div>
+					</div>
 				</div>
 			</div>
+			<div class="services__action">
+				<span class="services__action-text">for custom <b>pricing info:</b></span>
+				<button class="services__quote-button">GET A QUOTE</button>
+			</div>
+			<!--
+			<div class="services__action">
+				<div class="services__action--left">
+					<button class="services__contact-button">CONTACT US</button>
+					<span class="services__action-text">with <b>questions.</b></span>
+				</div>
+				<span class="services__or">OR</span>
+				<div class="services__action--right">
+					<button class="services__quote-button">GET A QUOTE</button>
+					<span class="services__action-text">for <b>pricing info.</b></span>
+				</div>
+			</div>
+			-->
 		</div>
 	</div>
 
+	<!--
 	<div class="partners" id="partners">
 
 		<h2 class="partners__title">Some of our work:</h2>
@@ -154,26 +189,28 @@
 		</div>
 
 	</div>
+	-->
 	
-	<div class="contact" id="contact">
-		<h2 class="contact__title">Contact us</h2>
+	<div class="quote" id="quote">
+		<h2 class="quote__title">Get A Quote</h2>
+		<div class="quote__tic-tac"></div>
 		<div class="flex-container">
-			<p class="contact__subtitle"><b>Ready to get started?</b> Or maybe you have a question? Our Inbox is the place for you...</p>
+			<p class="quote__subtitle">Want a custom quote for your business plus more info on our services? Fill out this quick form and we'll get back to you within 48 hours...</p>
 		</div>
 		<div class="flex-container">
 			<form class="contact__form-container" method="POST" action="https://formspree.io/downrightsocial@gmail.com">
-				<input required class="contact__email" type="text" name="busniess" placeholder="Name of business">
 				<input required class="contact__name" type="text" name="name" placeholder="Your name">
 				<input required class="contact__email" type="email" name="email" placeholder="Your email">
-				<textarea required class="contact__message" rows="10" name="message" placeholder="I would like a custom proposal for my business..."></textarea>
+				<input required class="contact__email" type="text" name="business" placeholder="Name of business">
+				<input required class="contact__email" type="text" name="services" placeholder="Location(s) of Business">
+				<input class="contact__email" type="text" name="budget" placeholder="Approximate budget (optional)">
+				<textarea required class="contact__message" rows="10" name="message" placeholder="A brief description of the services you're interested in, and anything else you'd like us to know."></textarea>
 				<input type="hidden" name="_next" value="thanks.html"/>
 				<input type="text" name="_gotcha" style="display:none" />
 				<button class="contact__send-btn" type="submit">Send</button>
 			</form>
 		</div>
 	</div>
-
-	<!-- <div class="footer__transition"></div> -->
 
 	<footer>
 		<img class="footer-logo" src="images/footer-logo.png" srcset="images/footer-logo-2x.png 2x" alt="Downright Social Logo">
