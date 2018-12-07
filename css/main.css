@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 50;
 }
 
-.hero__bg-img-1 {
+.hero__bg-img-2 {
 	height: 650px;
 	opacity: 0.2;
 	position: absolute;
@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 5;
 }
 
-.hero__bg-img-2 {
+.hero__bg-img-1 {
 	height: 650px;
 	opacity: 0.2;
 	position: absolute;
@@ -380,75 +380,6 @@ h1, h2, h3, h4, h5, h6 {
 	background: #357ad0;
 }
 
-.partners {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 50px 20px;
-	background: #e3e8ef;
-    position: relative;
-}
-
-.partners__title {
-    margin: 0;
-    text-align: center;
-    color: #2c2e35;
-    font-size: 3.8rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.partners__body {
-	color: #2c2e35;
-	margin: 20px 0 40px; 
-	text-align: center;
-	max-width: 600px;
-}
-
-.partners__logo-container {
-	display: flex;
-	width: 800px;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 10px;
-}
-
-.partners__logo-item {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 10px;
-}
-
-.partners__logo {
-	padding: 10px;
-	height: 60px;
-	opacity: 0.8;
-}
-
-.partners__logo:hover {
-	opacity: 1;
-	cursor: pointer;
-}
-
-.partners__logo--light {
-	padding: 10px;
-	height: 60px;
-	opacity: 0.55;
-}
-
-.partners__logo--light:hover {
-	opacity: 0.75;
-	cursor: pointer;
-}
-
-.partners__type {
-	display: inline-block;
-	color: #999;
-	padding: 20px 10px;
-}
-
 .services {
 	display: flex;
 	flex-direction: column;
@@ -612,49 +543,10 @@ h1, h2, h3, h4, h5, h6 {
 	background: #357ad0;
 }
 
-.pricing {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 120px 0;
-	background: #fff;
-}
 
-.pricing__title {
-	margin: 0;
-    text-align: center;
-    color: #fd8640;
-    font-size: 3.2rem;
-    font-family: 'Playfair Display', serif;
-}
 
-.pricing__subtitle {
-	color: #777;
-	margin: 20px 20px 0 20px;
-	text-align: center;
-	max-width: 700px;
-}
+/* ========================================================================== CONTACT AND QUOTE FORM STYLES */
 
-.pricing__section {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.pricing__button {
-	font-size: 1.2rem;
-    color: #fd8640;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: 1px solid #fd8640;
-    margin-top: 40px;
-    background: transparent;
-}
-
-.pricing__button:hover {
-    border: 1px solid #de7436;
-    color: #de7436;
-}
 
 .quote {
 	background: #fff;
@@ -662,29 +554,6 @@ h1, h2, h3, h4, h5, h6 {
 	display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.quote__title {
-	margin: 0;
-    text-align: center;
-    color: #2c2e35;
-    font-size: 3.8rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.quote__tic-tac {
-	margin: 20px 0 0px;
-	height: 4px;
-	width: 70px;
-	border-radius: 5px;
-	background: #3d8bec;
-}
-
-.quote__subtitle {
-	margin: 15px 0 40px;
-	color: #2c2e35;
-	max-width: 550px;
-	text-align: center;
 }
 
 .contact {
@@ -695,21 +564,37 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.contact__subtitle {
-	margin: 15px 0 35px;
-	color: #2c2e35;
-	max-width: 700px;
-	text-align: center;
-}
-
-.contact__form-container {
+.form-container {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	max-width: 900px;
 }
 
-.contact__name {
+.quote__tic-tac, .contact__tic-tac {
+	margin: 20px 0 0px;
+	height: 4px;
+	width: 70px;
+	border-radius: 5px;
+	background: #3d8bec;
+}
+
+.quote__subtitle, .contact__subtitle {
+	margin: 15px 0 40px;
+	color: #2c2e35;
+	max-width: 550px;
+	text-align: center;
+}
+
+.quote__title, .contact__title {
+	margin: 0;
+    text-align: center;
+    color: #2c2e35;
+    font-size: 3.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.quote__single, .contact__single {
 	width: 650px;
 	border: none;
 	border-radius: 3px;
@@ -722,7 +607,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-.contact__email {
+.quote__message, .contact__message {
 	width: 650px;
 	border: none;
 	border-radius: 3px;
@@ -735,20 +620,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-.contact__message {
-	width: 650px;
-	border: none;
-	border-radius: 3px;
-	margin-bottom: 16px;
-	font-size: 1.5rem;
-	padding: 12px;
-	background: #e3e8ef;
-	border: solid 1px #eee;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-.contact__send-btn {
+.quote__send-btn, .contact__send-btn {
     font-size: 1.4rem;
     color: #fff;
     padding: 14px 28px;
@@ -758,28 +630,64 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
 }
 
-.contact__send-btn:hover {
+.quote__send-btn:hover, .contact__send-btn:hover {
     background: #de4c60;
 }
 
-.footer__transition {
-	height: 60px;
-	background: linear-gradient(to left bottom, #e9f1f7 49%, #374785 50%);
-}
 
-.footer__cta-container {
+/* ========================================================================== Thank you page */
+
+
+.thanks {
+	background: #fff;
+	background-position: center center;
+	background-size: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: #eee;
-	padding: 60px 0 70px;
+	justify-content: center;
+	height: 600px;
 }
 
-.footer__cta {
-	font-size: 1.8rem;
-	color: #666;
-    margin-bottom: 20px;
+.thanks__icon {
+	height: 60px;
 }
+
+.thanks__title {
+    margin: 40px 0 10px 0;
+    text-align: center;
+    color: #2c2e35;
+    font-size: 3.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.thanks__sub-title {
+	color: #2c2e35;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+    max-width: 700px;
+    line-height: 2;
+    margin: 10px 0 50px 0;
+}
+
+.thanks__home-btn {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 14px 28px;
+    margin-bottom: 30px;
+    border: none;
+    background: #f25268;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+}
+
+.thanks__home-btn:hover {
+    background: #de4c60;
+}
+
+
+/* ========================================================================== FOOTER STYLES */
+
 
 .footer__input-container {
 	display: flex;
@@ -930,57 +838,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* ========================================================================== Thank you page */
-
-
-.thank-you {
-	background: #fff;
-	background-position: center center;
-	background-size: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 600px;
-}
-
-.thank-you__icon {
-	height: 60px;
-}
-
-.thank-you__title {
-	color: #2c2e35;
-	text-align: center;
-	font-size: 40px;
-    margin: 40px 0 10px 0;
-}
-
-.thank-you__sub-title {
-	color: #2c2e35;
-	text-align: center;
-	font-size: 16px;
-	font-weight: 300;
-    max-width: 700px;
-    line-height: 2;
-    margin: 10px 0 50px 0;
-}
-
-.thank-you__home-btn {
-	align-self: center;
-	font-size: 14px;
-    color: #fff;
-    padding: 12px 32px;
-    border-radius: 5px;
-    border: none;
-    background: #3d8bec;
-    margin-bottom: 30px;
-}
-
-.thank-you__home-btn:hover {
-    background: #357ad0;
-}
-
-
 /* ========================================================================== Media Queries */
 
 
@@ -999,7 +856,7 @@ h1, h2, h3, h4, h5, h6 {
 		padding: 25px 100px 75px;
 	}
 
-	.hero__bg-img-1 {
+	.hero__bg-img-2 {
 		right: -50px;
 	}
 
@@ -1051,11 +908,11 @@ h1, h2, h3, h4, h5, h6 {
 		right: 75px;
 	}
 
-	.hero__bg-img-1 {
+	.hero__bg-img-2 {
 		right: -115px;
 	}
 
-	.hero__bg-img-2 {
+	.hero__bg-img-1 {
 	    top: 100px;
 		left: -50px;
 	}
@@ -1103,7 +960,7 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 3.2rem;
 	}
 
-	.quote__title {
+	.quote__title, .contact__title, .thanks__title {
 		font-size: 3.2rem;
 	}
 }
@@ -1115,7 +972,7 @@ h1, h2, h3, h4, h5, h6 {
 		width: 300px;
 	}
 
-	.hero__bg-img-1 {
+	.hero__bg-img-2 {
 		right: -155px;
 	}
 
@@ -1153,7 +1010,7 @@ h1, h2, h3, h4, h5, h6 {
 		max-width: 550px;
 	}
 
-	.hero__bg-img-1 {
+	.hero__bg-img-2 {
 		left: 600px;
 		top: 100px;
 	}
@@ -1215,7 +1072,7 @@ h1, h2, h3, h4, h5, h6 {
 		max-width: 450px;
 	}
 
-	.hero__bg-img-1 {
+	.hero__bg-img-2 {
 		left: 550px;
 		top: 100px;
 	}
@@ -1257,11 +1114,11 @@ h1, h2, h3, h4, h5, h6 {
 		display: none;
 	}
 
-	.hero__bg-img-1 {
+	.hero__bg-img-2 {
 		display: none;
 	}
 
-	.hero__bg-img-2 {
+	.hero__bg-img-1 {
 	    display: none;
 	}
 
@@ -1298,7 +1155,6 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 65px;
 	}
 
-
 	.hero__options {
 		display: none;
 	}
@@ -1315,15 +1171,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 694px) {
 
-	.contact__form-container {
+	.form-container {
 		width: 100%;
 	}
 
-	.contact__name, .contact__email, .contact__message {
+	.quote__single, .quote__message, .contact__single, .contact__message {
 		width: 90%;
 	}
 
-	.contact__send-btn {
+	.quote__send-btn, .contact__send-btn {
 		align-self: center;
 	}
 }
@@ -1369,6 +1225,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	.hero {
 		background-size: 550px auto;
+		background-image: url(../images/hero-bg--sm.jpg);
 	}
 
 	.hero__left {
@@ -1380,7 +1237,7 @@ h1, h2, h3, h4, h5, h6 {
 		top: 105px;
 	}
 
-	.contact, footer {
+	footer {
 		padding: 50px 25px;
 	}
 	

@@ -26,7 +26,7 @@
 
 	<header class="header--landing">
 		<a href="index.html">
-			<img class="header-logo" src="images/footer-logo-2x.png" srcset="images/footer-logo-2x.png 2x, images/footer-logo-2x.png 3x" alt="Downright Social Logo">
+			<img class="header-logo" src="images/header-logo--sm.png" srcset="images/header-logo--sm-2x.png 2x, images/header-logo--sm-2x.png 3x" alt="Downright Social Logo">
 		</a>
 		<div class="header__links">
 			<nav>
@@ -35,19 +35,19 @@
 					<li><a href="#services">SERVICES</a></li>
 				</ul>
 			</nav>
-			<a href="#contact">
+			<a href="contact.html">
 				<button class="header__button">CONTACT US</button>
 			</a>
 		</div>
 	</header>
 
-	<img class="hero__bg-img-1" src="images/diagonals-2.png">
-	<img class="hero__bg-img-2" src="images/diagonal.png">
-	<img class="hero__image" src="images/iphone.png">
+	<img class="hero__bg-img-1" src="images/diagonal-1.png">
+	<img class="hero__bg-img-2" src="images/diagonal-2.png">
+	<img class="hero__image" src="images/iphone.png" srcset="images/iphone--2x.png 2x, images/iphone--2x.png 3x">
 
 	<div class="hero">
 		<div class="hero__left">
-			<img src="images/footer-logo-2x.png" srcset="images/footer-logo-2x.png 2x" class="hero__logo">
+			<img class="hero__logo" src="images/header-logo.png" srcset="images/header-logo--2x.png 2x, images/header-logo--2x.png 3x" alt="Downright Social Logo">
 			<h1 class="hero__title"><span class="hero__title--m-sm">Hey there, we're</span><br><span class="hero__title--m-lg">Downright Social!</span></h1>
 			<p class="hero__pitch">Photography and Social Media Management for Food & Beverage Brands - based in Austin, Texas!</p>
 			<div class="hero__options">
@@ -55,14 +55,14 @@
 					<a href="#about">
 						<button class="hero__button">LEARN MORE</button>
 					</a>
-					<a href="#about">
+					<a href="#quote">
 						<button class="hero__button--alt">GET A QUOTE</button>
 					</a>
 				</div>
 			</div>
 			<div class="hero__options--m">
 				<div class="options--m__button-container">
-					<a href="#">
+					<a href="contact.html">
 						<button class="hero__button--m">CONTACT US</button>
 					</a>
 					<a href="#about">
@@ -75,7 +75,7 @@
 
 	<div class="about" id="about">
 
-		<img src="images/cluster-2.png" srcset="images/cluster-2.png 2x" class="about__image">
+		<img src="images/cluster.png" srcset="images/cluster--2x.png 2x" class="about__image">
 
 		<div class="about-right">
 			<h2 class="about__title">What makes us different?</h2>
@@ -85,7 +85,7 @@
 				<button class="about__button">OUR SERVICES</button>
 			</a>
 		</div>
-		
+
 	</div>
 
 	<div class="services" id="services">
@@ -143,81 +143,40 @@
 			</div>
 			<div class="services__action">
 				<span class="services__action-text">for custom <b>pricing info:</b></span>
-				<button class="services__quote-button">GET A QUOTE</button>
-			</div>
-			<!--
-			<div class="services__action">
-				<div class="services__action--left">
-					<button class="services__contact-button">CONTACT US</button>
-					<span class="services__action-text">with <b>questions.</b></span>
-				</div>
-				<span class="services__or">OR</span>
-				<div class="services__action--right">
+				<a href="#quote">
 					<button class="services__quote-button">GET A QUOTE</button>
-					<span class="services__action-text">for <b>pricing info.</b></span>
-				</div>
+				</a>
 			</div>
-			-->
 		</div>
 	</div>
-
-	<!--
-	<div class="partners" id="partners">
-
-		<h2 class="partners__title">Some of our work:</h2>
-		<div class="about__tic-tac"></div>
-		<p class="partners__body"><b>We've been <i>super</i> lucky</b> to work with some really amazing brands here in Austin! Click the logos below to see some of our work from each:</p>
-		<div class="partners__logo-container">
-			<div class="partners__logo-item">
-				<a href="https://www.instagram.com/munchaustin/">
-					<img src="images/munch-logo-6.png" alt="Munch Austin Logo" class="partners__logo--light">
-				</a>
-				<span class="partners__type">SMM & Photography</span>
-			</div>
-			<div class="partners__logo-item">
-				<a href="">
-					<img src="images/fairmont-logo.png" alt="Fairmont Austin Logo" class="partners__logo">
-				</a>
-				<span class="partners__type">Photography</span>
-			</div>
-			<div class="partners__logo-item">
-				<a href="">
-					<img src="images/juiceland-logo.png" alt="JuiceLand Logo" class="partners__logo">
-				</a>
-				<span class="partners__type">Photography</span>
-			</div>
-		</div>
-
-	</div>
-	-->
 	
 	<div class="quote" id="quote">
 		<h2 class="quote__title">Get A Quote</h2>
 		<div class="quote__tic-tac"></div>
 		<div class="flex-container">
-			<p class="quote__subtitle">Want a <b>custom quote for your business plus more info</b> on our services? Fill out this quick form and we'll get back to you within 48 hours...</p>
+			<p class="quote__subtitle"><b>Want a custom quote</b> for your business <b>plus more info</b> on our services? Fill out this quick form and we'll get back to you within 48 hours...</p>
 		</div>
-		<form class="contact__form-container" method="POST" action="https://formspree.io/downrightsocial@gmail.com">
-			<input required class="contact__name" type="text" name="name" placeholder="Your name">
-			<input required class="contact__email" type="email" name="email" placeholder="Your email">
-			<input required class="contact__email" type="text" name="business" placeholder="Name of business">
-			<input required class="contact__email" type="text" name="services" placeholder="Location(s) of Business">
-			<input class="contact__email" type="text" name="budget" placeholder="Approximate budget (optional)">
-			<textarea required class="contact__message" rows="10" name="message" placeholder="A description of the services you're interested in..."></textarea>
+		<form class="form-container" method="POST" action="https://formspree.io/downrightsocial@gmail.com">
+			<input required class="quote__single" type="text" name="name" placeholder="Your name">
+			<input required class="quote__single" type="email" name="email" placeholder="Your email">
+			<input required class="quote__single" type="text" name="business" placeholder="Name of business">
+			<input required class="quote__single" type="text" name="locations" placeholder="Location(s) of Business">
+			<input class="quote__single" type="text" name="budget" placeholder="Approximate budget (optional)">
+			<textarea required class="quote__message" rows="10" name="message" placeholder="A description of the services you're interested in..."></textarea>
 			<input type="hidden" name="_next" value="thanks.html"/>
 			<input type="text" name="_gotcha" style="display:none" />
-			<button class="contact__send-btn" type="submit">Send</button>
+			<button class="quote__send-btn" type="submit">Send</button>
 		</form>
 	</div>
 
 	<footer>
-		<img class="footer-logo" src="images/footer-logo.png" srcset="images/footer-logo-2x.png 2x" alt="Downright Social Logo">
+		<img class="footer-logo" src="images/header-logo--sm.png" srcset="images/header-logo--sm-2x.png 2x, images/header-logo--sm-2x.png 3x" alt="Downright Social Logo">
 		<nav>
 			<ul class="footer-nav">
 				<li><a href="index.html">Top</a></li><span class="footer-nav__slash">/</span>
 				<li><a href="#about">About</a></li><span class="footer-nav__slash">/</span>
 				<li><a href="#services">Services</a></li><span class="footer-nav__slash">/</span>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 		<span class="footer-copyright">Copyright by Downright Social, LLC. All rights reserved.</span>
