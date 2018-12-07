@@ -43,13 +43,12 @@
 
 	<img class="hero__bg-img-1" src="images/diagonals-2.png">
 	<img class="hero__bg-img-2" src="images/diagonal.png">
-	<img class="hero__bg-img-3" src="images/diagonal-2.png">
 	<img class="hero__image" src="images/iphone.png">
 
 	<div class="hero">
 		<div class="hero__left">
 			<img src="images/footer-logo-2x.png" srcset="images/footer-logo-2x.png 2x" class="hero__logo">
-			<h1 class="hero__title">Hey there, we're<br>Downright Social!</h1>
+			<h1 class="hero__title"><span class="hero__title--m-sm">Hey there, we're</span><br><span class="hero__title--m-lg">Downright Social!</span></h1>
 			<p class="hero__pitch">Photography and Social Media Management for Food & Beverage Brands - based in Austin, Texas!</p>
 			<div class="hero__options">
 				<div class="options__button-container">
@@ -80,12 +79,13 @@
 
 		<div class="about-right">
 			<h2 class="about__title">What makes us different?</h2>
-			<!-- <div class="about__tic-tac"></div> -->
+			<div class="about__tic-tac"></div>
 			<p class="about__body">We've done photography for brands including <b>JuiceLand</b>, and the <b>Fairmont Austin</b>, while also growing our own social media influence with <b><a href="https://www.instagram.com/munchaustin/" class="about__link">@MunchAustin</a></b>. We believe in strong branding, beautiful imagery, and building community with real, ethical, and wholesome practices!</p>
 			<a href="#services">
 				<button class="about__button">OUR SERVICES</button>
 			</a>
 		</div>
+		
 	</div>
 
 	<div class="services" id="services">
@@ -195,21 +195,19 @@
 		<h2 class="quote__title">Get A Quote</h2>
 		<div class="quote__tic-tac"></div>
 		<div class="flex-container">
-			<p class="quote__subtitle">Want a custom quote for your business plus more info on our services? Fill out this quick form and we'll get back to you within 48 hours...</p>
+			<p class="quote__subtitle">Want a <b>custom quote for your business plus more info</b> on our services? Fill out this quick form and we'll get back to you within 48 hours...</p>
 		</div>
-		<div class="flex-container">
-			<form class="contact__form-container" method="POST" action="https://formspree.io/downrightsocial@gmail.com">
-				<input required class="contact__name" type="text" name="name" placeholder="Your name">
-				<input required class="contact__email" type="email" name="email" placeholder="Your email">
-				<input required class="contact__email" type="text" name="business" placeholder="Name of business">
-				<input required class="contact__email" type="text" name="services" placeholder="Location(s) of Business">
-				<input class="contact__email" type="text" name="budget" placeholder="Approximate budget (optional)">
-				<textarea required class="contact__message" rows="10" name="message" placeholder="A brief description of the services you're interested in, and anything else you'd like us to know."></textarea>
-				<input type="hidden" name="_next" value="thanks.html"/>
-				<input type="text" name="_gotcha" style="display:none" />
-				<button class="contact__send-btn" type="submit">Send</button>
-			</form>
-		</div>
+		<form class="contact__form-container" method="POST" action="https://formspree.io/downrightsocial@gmail.com">
+			<input required class="contact__name" type="text" name="name" placeholder="Your name">
+			<input required class="contact__email" type="email" name="email" placeholder="Your email">
+			<input required class="contact__email" type="text" name="business" placeholder="Name of business">
+			<input required class="contact__email" type="text" name="services" placeholder="Location(s) of Business">
+			<input class="contact__email" type="text" name="budget" placeholder="Approximate budget (optional)">
+			<textarea required class="contact__message" rows="10" name="message" placeholder="A description of the services you're interested in..."></textarea>
+			<input type="hidden" name="_next" value="thanks.html"/>
+			<input type="text" name="_gotcha" style="display:none" />
+			<button class="contact__send-btn" type="submit">Send</button>
+		</form>
 	</div>
 
 	<footer>
