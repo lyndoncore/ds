@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Photography and Social Media Management for Food and Beverage Brands - based in Austin, Texas!">
 <link rel="stylesheet" type="text/css" href="css/main.css.gz">
+<script src="js/scripts1.1.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Sumana:700" rel="stylesheet">
@@ -24,28 +25,43 @@
 
 <body>
 
-	<header class="header--site">
+	<header class="header--landing" class="header">
+
 		<a href="index.html">
 			<img class="header-logo" src="images/header-logo--sm.png" srcset="images/header-logo--sm-2x.png 2x, images/header-logo--sm-2x.png 3x" alt="Downright Social Logo">
 		</a>
+
 		<div class="header__links">
-			<nav>
-				<ul class="header-nav">
-					<li><a href="index.html#about">ABOUT</a></li>
-					<li><a href="index.html#services">SERVICES</a></li>
-				</ul>
-			</nav>
+			<ul class="header-nav">
+				<li><a href="index.html#about">ABOUT</a></li>
+				<li><a target="_blank" href="https://www.dropbox.com/sh/mt2jk0z07700moz/AADcSLsjNruwSEcgn4xw1OwMa?dl=0">GALLERY</a></li>
+				<li><a href="index.html#services">SERVICES</a></li>
+			</ul>
 			<a href="contact.html">
 				<button class="header__button">CONTACT US</button>
 			</a>
 		</div>
+
+		<div id="hamburger-button" class="hamburger">
+			<span class="hamburger-slice"></span>
+			<span class="hamburger-slice"></span>
+			<span class="hamburger-slice"></span>
+		</div>
+
 	</header>
+
+	<ul id="hamburger-menu" class="m-menu--hidden">
+		<li><a href="#about">ABOUT</a></li>
+		<li><a href="#about">GALLERY</a></li>
+		<li><a href="#services">SERVICES</a></li>
+		<li><a href="contact.html">CONTACT US</a></li>
+	</ul>
 	
 	<div class="contact" id="contact">
 		<h2 class="contact__title">Contact Us</h2>
 		<div class="contact__tic-tac"></div>
 		<div class="flex-container">
-			<p class="contact__subtitle"><b>Maybe you have a question?</b> Or maybe you just want to reach out. No worries, we'd love to hear from you...</p>
+			<p class="contact__subtitle"><b>Maybe you have a question?</b> Or maybe you just want to say hi! Either way, we'd love to hear from you...</p>
 		</div>
 		<form class="form-container" method="POST" action="https://formspree.io/downrightsocial@gmail.com">
 			<input required class="contact__single" type="text" name="name" placeholder="Your name">
@@ -61,10 +77,10 @@
 		<img class="footer-logo" src="images/header-logo--sm.png" srcset="images/header-logo--sm-2x.png 2x, images/header-logo--sm-2x.png 3x" alt="Downright Social Logo">
 		<nav>
 			<ul class="footer-nav">
-				<li><a href="index.html">Home</a></li><span class="footer-nav__slash">/</span>
 				<li><a href="index.html#about">About</a></li><span class="footer-nav__slash">/</span>
+				<li><a target="_blank" href="https://www.dropbox.com/sh/mt2jk0z07700moz/AADcSLsjNruwSEcgn4xw1OwMa?dl=0">Gallery</a></li><span class="footer-nav__slash">/</span>
 				<li><a href="index.html#services">Services</a></li><span class="footer-nav__slash">/</span>
-				<li><a href="#">Contact</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 		<span class="footer-copyright">Copyright by Downright Social, LLC. All rights reserved.</span>
