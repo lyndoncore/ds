@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 	display: none;
 }
 
-.contact, footer {
+.gallery, .contact, footer {
 	padding: 50px;
 }
 
@@ -563,7 +563,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* ========================================================================== CONTACT AND QUOTE FORM STYLES */
+/* ========================================================================== CONTACT, GALLERY, AND QUOTE FORM STYLES */
 
 
 .quote {
@@ -576,7 +576,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact {
 	background: #fff;
-	padding: 100px 20px 80px;
+	padding: 80px 20px 80px;
 	display: flex;
     flex-direction: column;
     align-items: center;
@@ -650,6 +650,97 @@ h1, h2, h3, h4, h5, h6 {
 
 .quote__send-btn:hover, .contact__send-btn:hover {
     background: #de4c60;
+}
+
+
+/* ========================================================================== Gallery page */
+
+
+.gallery {
+	background: #fff;
+	padding: 80px 20px 80px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery__title {
+	margin: 0;
+    text-align: center;
+    color: #2c2e35;
+    font-size: 3.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.gallery__tic-tac {
+	margin: 20px 0 0px;
+	height: 4px;
+	width: 70px;
+	border-radius: 5px;
+	background: #f25268;
+}
+
+.gallery__subtitle {
+    margin: 15px 25px 0;
+	color: #2c2e35;
+	max-width: 650px;
+	text-align: center;
+}
+
+.gallery__subtitle-link {
+	color: #2c2e35;
+}
+
+.gallery__grid {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1050px;
+    padding: 40px 0;
+}
+
+.gallery__img-container {
+	width: 300px;
+	height: 300px;
+	margin: 25px;
+	background: #0f2c40;
+}
+
+.gallery__img {
+	width: 100%;
+	height: 100%;
+}
+
+.gallery__img:hover {
+	opacity: 0.8;
+}
+
+.gallery__cta {
+	display: flex;
+	flex-direction: column;
+	max-width: 380px;
+    text-align: center;
+}
+
+.gallery__cta-text {
+	display: inline-block;
+	line-height: 2;
+	color: #2c2e35;
+}
+
+.gallery__cta-btn {
+	margin: 40px 0 0;
+	font-size: 1.2rem;
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    background: #f25268;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.1);
+}
+
+.gallery__cta-btn:hover {
+	background: #cc4a5c;
 }
 
 
@@ -945,7 +1036,7 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 3.2rem;
 	}
 
-	.quote__title, .about__title, .contact__title, .thanks__title {
+	.quote__title, .about__title, .contact__title, .thanks__title, .gallery__title {
 		font-size: 3.2rem;
 	}
 }
@@ -967,10 +1058,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	.hero__image {
 		display: none;
-	}
-
-	.hero__pitch {
-		font-size: 1.5rem;
 	}
 
 	.about__image {
@@ -1137,6 +1224,11 @@ h1, h2, h3, h4, h5, h6 {
 		background: #0c2435;
 	}
 
+	.contact, .gallery {
+		padding: 60px 20px 60px;
+	}
+
+
 }
 
 @media (min-width: 680px) {
@@ -1147,6 +1239,13 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+@media (max-width: 640px) {
+
+	.gallery__img-container {
+		margin: 10px;
+	}
+
+}
 
 @media (max-width: 590px) {
 
@@ -1241,6 +1340,11 @@ h1, h2, h3, h4, h5, h6 {
 
 	.hero__title {
 		font-size: 4.0rem;
+		line-height: 1.4;
+	}
+
+	.hero__pitch {
+		color: #fff;
 	}
 
 	.how__box {
@@ -1270,9 +1374,9 @@ h1, h2, h3, h4, h5, h6 {
 		height: 87.5vw;
 	}
 
-	.why__title, .how__title, .pricing__title, .contact__title {
-		font-size: 20px;
-	}
+	.gallery__subtitle {
+    	margin: 15px 0 0;
+    }
 
 	.service__container {
 		padding: 25px 0;
