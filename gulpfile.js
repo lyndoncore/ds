@@ -81,7 +81,7 @@ gulp.task('minify-scripts', function() {
 
 gulp.task('images', function() {
     gulp.src('images/*')
-        .pipe(imagemin())
+/*         .pipe(imagemin()) WAS DESATURATING IMAGES */
         .pipe(gulp.dest('build/images'))
 }
 );
