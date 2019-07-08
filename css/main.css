@@ -552,6 +552,31 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 25px;
 }
 
+.photography__container--double {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 25px;
+}
+
+.photography-service--left {
+	position: relative;
+	flex: 1 1 0;
+	padding: 25px 50px 0 0;
+	box-sizing: border-box;
+}
+
+.photography-service--right {
+	position: relative;
+	flex: 1 1 0;
+	padding: 25px 0 0 50px;
+	box-sizing: border-box;
+}
+
+.photography-service--inside {
+	padding-left: 25px;
+	border-left: solid 4px #f7e6cd;
+}
+
 .service__container--double {
 	display: flex;
 	justify-content: space-between;
@@ -602,9 +627,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .service__link {
 	color: #e49930;
-	font-size: 1.5rem;
-	margin-top: 20px;
-	display: inline-block;
 }
 
 .services__action {
@@ -949,6 +971,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* ========================================================================== Thank you page */
+
+
+.calendar {
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 80px 20px 80px;
+}
+
+.calendar__title {
+	margin: 0;
+    text-align: center;
+    color: #2c2e35;
+    font-size: 3.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.calendar__tic-tac {
+	margin: 20px 0 0px;
+	height: 4px;
+	width: 70px;
+	border-radius: 5px;
+	background: #f25268;
+}
+
+.calendar__subtitle {
+    margin: 15px 15px 50px;
+	color: #2c2e35;
+	max-width: 750px;
+	text-align: center;
+}
+
+
+.calendar__container {
+	/* ========= styles defined in media queries */
+}
+
+
+
+
 /* ========================================================================== FOOTER STYLES */
 
 
@@ -1216,6 +1281,19 @@ h1, h2, h3, h4, h5, h6 {
 		flex-direction: column;
 	}
 
+	.photography__container--double {
+		flex-direction: column;
+		padding-bottom: 0;
+	}
+
+	.photography-service--left {
+		padding: 25px 0 0 0;
+	}
+
+	.photography-service--right {
+		padding: 35px 0 0 0;
+	}
+
 	.service__body {
 		width: auto;
 	}
@@ -1259,14 +1337,14 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1050px) {
 
-
 	.services__title {
 		font-size: 3.2rem;
 	}
 
-	.quote__title, .about__title, .contact__title, .thanks__title, .gallery__title {
+	.quote__title, .about__title, .contact__title, .thanks__title, .gallery__title, .calendar__title {
 		font-size: 3.2rem;
 	}
+
 }
 
 @media (max-width: 975px) {
@@ -1329,6 +1407,13 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+@media (min-width: 851px) {
+
+	.calendar__container {
+		width: 750px;
+	}
+
+}
 
 @media (max-width: 850px) {
 
@@ -1365,6 +1450,10 @@ h1, h2, h3, h4, h5, h6 {
 
 	.services__grid {
 	    padding: 25px 50px;
+	}
+
+	.calendar__container {
+		width: 100%;
 	}
 
 }
@@ -1513,7 +1602,7 @@ h1, h2, h3, h4, h5, h6 {
 		background: #0c2435;
 	}
 
-	.contact, .gallery {
+	.contact, .gallery, .calendar {
 		padding: 60px 20px 60px;
 	}
 
@@ -1654,6 +1743,11 @@ h1, h2, h3, h4, h5, h6 {
 
 	.individual-service {
 	    padding-left: 0;
+	    border-left: none;
+	}
+
+	.photography-service--inside {
+		padding-left: 0;
 	    border-left: none;
 	}
 }
